@@ -1,20 +1,28 @@
 {
-  "name": "generator-d3-starter-kit",
+  "name": "graphs",
   "version": "0.0.1",
-  "dependencies": {
-    "gulp": "~3.6.2",
-    "gulp-uglify": "~1.0.2",
-    "gulp-jshint": "~1.9.0",
-    "express": "~4.1.1",
-    "connect-livereload": "~0.4.0",
-    "tiny-lr": "0.0.7",
-    "lodash": "~2.4.1",
-    "node-dir": "~0.1.5",
-    "jade": "~1.3.1",
-    "jasmine-core": "~2.1.3",
-    "karma": "~0.13.15",
-    "karma-chrome-launcher": "~0.2.1",
-    "karma-jasmine": "~0.3.4"
+  "description": "A framework for graph visualization.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author":"Theo Pack"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andeb/graphs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andeb/graphs/issues"
+  },
+  "homepage": "https://github.com/andeb/graphs#readme",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "express": "^4.13.4",
+    "livereload": "^0.4.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "livereload": "^0.4.1"
+  }
 }
