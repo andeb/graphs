@@ -6,25 +6,28 @@
   <title>Example</title>
   <!-- CSS -->
   <style type="text/css">
-
   </style>
-</head>
-<body>
-  <div class="container">
-  <div id="demo"></div>
-    
-  </div>
+  
   <!-- Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
   <script src="http://marvl.infotech.monash.edu/webcola/cola.v3.min.js"></script>
-
   <script src="greuler/dist/greuler.min.js"></script>
+</head>
+<body>
+  <div id="graph"></div>
 
   <script>
+  
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+var margin = 40;
+var pad = margin / 2;
+
 var instance = greuler({
-  target: '#demo',
-  width: 480,
-  height: 500,
+  target: '#graph',
+  width: width - pad,
+  height: height - pad,
   data: {
     nodes: [
       {id: 0},
@@ -46,6 +49,8 @@ var instance = greuler({
   }
 }).update()
   </script>
+
+
 </body>
 
 </html>
